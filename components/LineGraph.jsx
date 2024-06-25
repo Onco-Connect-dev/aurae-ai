@@ -2,7 +2,7 @@ import React from "react";
 
 function LineGraph() {
   return (
-    <div className="flex pt-20 pb-20">
+    <div className="flex pt-20 pb-20 mt-10 pl-10">
       <div className="w-1/2 grid grid-cols-2">
         <div className="pl-5 pt-3">
           <svg

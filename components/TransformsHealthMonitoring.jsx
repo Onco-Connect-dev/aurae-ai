@@ -152,8 +152,8 @@ const TransformsHealthMonitoring = () => {
 </svg>
 </div>
 
-<div className="pl-5 pr-5">
-<svg width="1308" height="419" viewBox="0 0 1308 419" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div className="pl-20 pr-5">
+<svg width="1208" height="419" viewBox="0 0 1308 419" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M280.403 208.167L150.536 276.737L20.6692 208.167L20.6692 71.1017L150.536 2.53157L280.402 71.1017L280.403 208.167Z" fill="url(#paint0_linear_4367_2038)" stroke="#FF8048"/>
 <path d="M280.403 208.167L150.536 276.737L20.6692 208.167L20.6692 71.1017L150.536 2.53157L280.402 71.1017L280.403 208.167Z" fill="url(#paint1_linear_4367_2038)" stroke="#FF8048"/>
 <path d="M280.403 208.167L150.536 276.737L20.6692 208.167L20.6692 71.1017L150.536 2.53157L280.402 71.1017L280.403 208.167Z" fill="url(#paint2_linear_4367_2038)" stroke="#FF8048"/>

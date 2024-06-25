@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import TabsComponent from "./TabsComponent";
 
 function WhoWeWorkWith() {
   return (
-    <div>WhoWeWorkWith</div>
-  )
+    <div className="w-screen overflow-x-hidden">
+      <TabsComponent />
+    </div>
+  );
 }
 
-export default WhoWeWorkWith
+export default WhoWeWorkWith;
