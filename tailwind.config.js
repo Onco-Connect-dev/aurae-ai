@@ -14,6 +14,9 @@ module.exports = {
         'custom-gradient': 'linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #FF8048 100%)',
 
       },
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+      },
     },
   },
   plugins: [],

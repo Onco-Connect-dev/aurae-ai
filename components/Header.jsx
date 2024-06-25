@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='w-full text-black font-[400] font-[poppins] text-[20px] pl-10 pr-10 pt-[22px] pb-[22px] flex justify-between space-x-8'>
+    <div className='w-full overflow-x-hidden text-black font-[400] font-[poppins] text-[20px] pl-10 pr-10 pt-[22px] pb-[22px] flex justify-between space-x-8'>
       <div>
         Logo
       </div>

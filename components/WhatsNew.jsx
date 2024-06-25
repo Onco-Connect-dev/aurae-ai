@@ -4,7 +4,7 @@ import img from "../public/whatsnew.jpeg";
 import rightArrow from "../public/arrow-white.png"
 function WhatsNew() {
   return (
-    <div className="pb-20">
+    <div className="pb-20 pt-20">
       <p className="text-[48px] mb-10 text-center w-screen font-semibold">
         What’s new at Aurae.ai?
       </p>
