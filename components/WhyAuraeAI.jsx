@@ -3,7 +3,7 @@ import img from "../public/why.png";
 import Image from "next/image";
 const WhyAuraeAI = () => {
   return (
-    <div className="w-screen h-[775px] pl-[70px] bg-[#F8F8F899] flex">
+    <div className=" w-screen overflow-x-hidden h-[775px] pl-[70px] bg-[#F8F8F899] flex">
       <div className="w-1/2 pt-[20%]">
         <Image src={img} className="rounded-[25px]" />
       </div>

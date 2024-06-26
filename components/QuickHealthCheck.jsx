@@ -4,12 +4,12 @@ import img from "../public/health-check-mobile.png"
 import ellipse from "../public/ellipse.png"
 export default function QuickHealthCheck() {
   return (
-    <div className="bg-white w-screen pt-20">
-      <div className="bg-[#F2F6FA] font-playfair flex justify-between text-nowrap pl-[65px] pr-[100px] w-full">
+    <div className="bg-white  w-screen overflow-x-hidden pt-20">
+      <div className="bg-[#F2F6FA] h-[77px] font-playfair flex justify-between p-3 text-nowrap pl-[65px] pr-[100px] w-full">
         <p className="text-[#21201FCC] text-[30px] font-[600]">
           Aurae is partnering with leading organisations in India & APAC
         </p>
-        <button className="text-[white] text-[22px] font-[500] w-[205px] bg-[#263341] rounded-full">
+        <button className="text-[white] mt-1 text-[22px] h-[43px] font-[500] w-[205px] bg-[#263341] rounded-full">
           Speak to us
         </button>
       </div>

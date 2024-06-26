@@ -4,7 +4,7 @@ import React from "react";
 
 const TransformsHealthMonitoring = () => {
   return (
-    <div className="pt-10 pb-10">
+    <div className="pt-10 pb-10  w-screen overflow-x-hidden">
       <p className="text-center text-[48px] font-[600]">
         <span className="text-[#DC7D57]">How</span>{" "}
         <span className=" text-gradient">Aurae.AI</span>{" "}

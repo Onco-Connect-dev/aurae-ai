@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-screen flex h-[583px] bg-[#263341] p-10 pt-20">
+    <div className=" w-screen overflow-x-hidden flex h-[583px] bg-[#263341] p-10 pt-20">
       <div className="w-1/2 text-white">
         <span className="text-[24px] font-[700]">Book a Demo</span>
         <p className="text-[20px] font-[400] font-[Open Sans] pb-4 pt-4">

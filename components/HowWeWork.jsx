@@ -2,7 +2,7 @@ import React from 'react'
 
 function HowWeWork() {
   return (
-    <div></div>
+    <div className=' w-screen overflow-x-hidden'></div>
   )
 }
 
