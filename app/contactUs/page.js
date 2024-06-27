@@ -1,11 +1,13 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import React from "react";
+"use client"
+
+import React, {useEffect} from 'react'
 
 function page() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div>
-      <Header />
       <div className="w-screen flex justify-between pb-20 pl-[160px] pt-[110px]">
         <div className="w-1/2 flex flex-col gap-10 ">
           <p className="text-[24px] font-[700]">Contact us</p>
@@ -73,7 +75,6 @@ function page() {
           </form>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

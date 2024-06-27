@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
   FaFacebookF,
@@ -45,12 +46,18 @@ const Footer = () => {
       </div>
       <div className="w-1/4 flex flex-col gap-8 pl-[65px] text-white">
         <span className="font-[400] text-[24px] ">Quick Links</span>
-        <p className="font-[400] text-[16px] ">Solutions</p>
-        <p className="font-[400] text-[16px] ">Blogs</p>
-        <p className="font-[400] text-[16px] ">Contact Us</p>
+        <Link href="/solutions">
+          <p className="font-[400] text-[16px] ">Solutions</p>
+        </Link>
+        <Link href="/blogs">
+          <p className="font-[400] text-[16px] ">Blogs</p>
+        </Link>
+        <Link href="/contactUs">
+          <p className="font-[400] text-[16px] ">Contact Us</p>
+        </Link>
       </div>
       <div className="w-1/4">
-        <div className="icons pt-3 flex gap-6 text-white text-xl">
+        <div className="icons pt-3 flex cursor-pointer gap-6 text-white text-xl">
           <FaFacebookF />
           <FaInstagram />
           <FaTwitter />
