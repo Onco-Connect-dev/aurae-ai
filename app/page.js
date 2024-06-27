@@ -11,14 +11,14 @@ import TabsComponent from "@/components/TabsComponent";
 export default function Home() {
   return (
     <main className="flex w-full bg-white flex-col items-center justify-between">
-      {/* <Banner /> */}
-      {/* <QuickHealthCheck /> */}
-      {/* <LineGraph /> */}
+      <Banner />
+      <QuickHealthCheck />
+      <LineGraph />
       <HowWeWork />
-      {/* <TransformsHealthMonitoring /> */}
-      {/* <TabsComponent /> */}
-      {/* <WhyAuraeAI /> */}
-      {/* <WhatsNew />  */}
+      <TransformsHealthMonitoring />
+      <TabsComponent />
+      <WhyAuraeAI />
+      <WhatsNew /> 
     </main>
   );
 }
