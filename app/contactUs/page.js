@@ -8,8 +8,8 @@ function page() {
   }, []);
   return (
     <div>
-      <div className="w-screen flex justify-between pb-20 pl-[160px] pt-[110px]">
-        <div className="w-1/2 flex flex-col gap-10 ">
+      <div className="w-screen flex flex-col  lg:flex-row justify-between pb-20 pl-10 lg:pl-[160px] pt-[110px]">
+        <div className="w-full lg:w-1/2  flex flex-col gap-10 ">
           <p className="text-[24px] font-[700]">Contact us</p>
           <p className="text-[16px] font-[400] w-[91%]">
             Get an insightful demonstration of all that Auraeai has to offer to
@@ -36,7 +36,7 @@ function page() {
           </div>
           <p>For customer support/ appointment related queries:</p>
         </div>
-        <div className="w-1/2 ">
+        <div className="w-full lg:w-1/2 ">
           <form className="mr-20 h-[350px] w-[80%] p-5 pt-10 rounded-[10px] bg-[#F2F6FA]">
             <div>
               <input
