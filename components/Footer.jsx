@@ -11,24 +11,24 @@ import {
 
 const Footer = () => {
   return (
-    <div className=" w-screen overflow-x-hidden flex h-[583px] bg-[#263341] p-10 pt-20">
-      <div className="w-1/2 text-white">
+    <div className="w-full overflow-x-hidden flex flex-col lg:flex-row h-auto lg:h-[583px] bg-[#263341] p-10 lg:pt-20">
+      <div className="w-full lg:w-1/2 text-white mb-10 lg:mb-0">
         <span className="text-[24px] font-[700]">Book a Demo</span>
         <p className="text-[20px] font-[400] font-[Open Sans] pb-4 pt-4">
           We would love to give you a quick demo of how Aurae.ai can help your
-          health better. Reach out to us by filling the form below{" "}
+          health better. Reach out to us by filling the form below
         </p>
         <form action="">
           <div className="flex flex-col ">
-            <div className="flex justify-between gap-[40px]">
+            <div className="flex flex-col md:flex-row justify-between gap-[40px]">
               <input
                 placeholder="First Name"
-                className="h-[64px] text-black outline-none p-3 text-[16px] font-[250] w-1/2 rounded-[8px]"
+                className="h-[64px] text-black outline-none p-3 text-[16px] font-[250] w-full md:w-1/2 rounded-[8px] mb-4 md:mb-0"
                 type="text"
               />
               <input
                 placeholder="Email Address"
-                className="h-[64px] text-black outline-none p-3 text-[16px] font-[250] w-1/2 rounded-[8px]"
+                className="h-[64px] text-black outline-none p-3 text-[16px] font-[250] w-full md:w-1/2 rounded-[8px]"
                 type="text"
               />
             </div>
@@ -40,23 +40,23 @@ const Footer = () => {
             />
           </div>
         </form>
-        <button className="text-[#263341] font-[500] text-[22px] bg-white w-[590px] h-[53px] rounded-[28px] mt-[30px]">
+        <button className="text-[#263341] font-[500] text-[22px] bg-white w-full h-[53px] rounded-[28px] mt-[30px]">
           Book a demo
         </button>
       </div>
-      <div className="w-1/4 flex flex-col gap-8 pl-[65px] text-white">
-        <span className="font-[400] text-[24px] ">Quick Links</span>
+      <div className="w-full lg:w-1/4 flex flex-col gap-8 pl-0 lg:pl-[65px] text-white mb-10 lg:mb-0">
+        <span className="font-[400] text-[24px]">Quick Links</span>
         <Link href="/solutions">
-          <p className="font-[400] text-[16px] ">Solutions</p>
+          <p className="font-[400] text-[16px]">Solutions</p>
         </Link>
         <Link href="/blogs">
-          <p className="font-[400] text-[16px] ">Blogs</p>
+          <p className="font-[400] text-[16px]">Blogs</p>
         </Link>
         <Link href="/contactUs">
-          <p className="font-[400] text-[16px] ">Contact Us</p>
+          <p className="font-[400] text-[16px]">Contact Us</p>
         </Link>
       </div>
-      <div className="w-1/4">
+      <div className="w-full lg:w-1/4 text-white">
         <div className="icons pt-3 flex cursor-pointer gap-6 text-white text-xl">
           <FaFacebookF />
           <FaInstagram />
@@ -72,33 +72,33 @@ const Footer = () => {
           <svg
             width="44"
             height="49"
-            viewBox="0 0 44 49"
+            viewBox="0  0 44 49"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M5.26682 22.1128C4.02883 17.3869 3.07971 6.94896 9.18711 3.00391"
               stroke="#DC7D57"
-              stroke-width="2"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinejoin="round"
             />
             <path
               d="M6.08594 27.0457C6.98004 25.8814 8.68571 22.6897 8.35558 19.2378"
               stroke="#DC7D57"
-              stroke-width="2"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinejoin="round"
             />
             <path
               d="M7.94922 16.1549C8.2931 8.21001 14.7582 -5.61224 33.5343 4.64851"
               stroke="#DC7D57"
-              stroke-width="2"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinejoin="round"
             />
             <path
               d="M1.75781 39.7811L6.91609 33.4115M8.36041 30.5349C9.52962 28.8911 11.9506 24.6995 12.2807 21.0832C12.6108 17.4669 12.4183 13.9602 12.2807 12.6589M13.106 9.37132C15.9947 2.79624 28.1682 2.38515 32.9138 9.3712C37.6594 16.3572 35.3898 21.9049 34.9771 22.1104M34.3581 24.7817C33.7392 28.0692 31.7171 35.9593 28.5809 41.2194M36.2151 7.72755C38.416 11.837 41.4972 22.4393 36.2151 31.9732M41.7861 23.9598L42.8177 28.2747C43.0241 28.8226 43.2304 30.1239 42.4051 30.9458C41.5797 31.7677 40.7544 32.1787 40.1354 32.5896C39.5164 33.0005 37.2055 37.8908 37.0405 40.1921M34.9771 35.8772L32.7075 40.603M4.64645 41.6304C7.94775 37.8634 14.5916 29.4664 14.7567 26.0145M15.3757 22.727L15.582 13.4808C15.7196 11.6315 17.1089 8.01521 21.5656 8.34397C24.1791 8.41246 29.6125 9.65899 30.4379 14.0972M31.4695 16.7683C31.332 21.0147 30.3141 30.4527 27.3429 34.2334M26.1049 36.9045L23.2163 42.0413M14.7567 48C18.4019 42.7262 25.5684 31.8499 25.0732 30.5349M26.3112 27.6583C27.0678 24.4392 28.1682 17.5902 27.1366 14.7136C26.1049 11.837 21.1529 11.837 19.5023 14.0972C17.8516 16.3574 19.296 18.0011 19.296 18.0011M23.2163 15.33V22.727C23.2163 23.4119 23.2163 24.3707 22.8036 25.6036C22.3909 26.8364 20.4652 31.0828 19.5023 33.4115M11.6617 45.7398L18.2643 36.4936M7.94775 43.8905L10.4237 41.2194M12.2807 38.7538C14.8872 34.7813 20.0631 25.5625 19.915 20.4668"
               stroke="#DC7D57"
-              stroke-width="2"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinejoin="round"
             />
           </svg>
 

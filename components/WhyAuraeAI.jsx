@@ -3,14 +3,14 @@ import img from "../public/why.png";
 import Image from "next/image";
 const WhyAuraeAI = () => {
   return (
-    <div className=" w-screen overflow-x-hidden h-[775px] pl-[70px] bg-[#F8F8F899] flex">
-      <div className="w-1/2 pt-[20%]">
+    <div className=" w-full overflow-x-hidden h-[775px] pl-10 pr-10 lg:pl-[70px] bg-[#F8F8F899] flex flex-col lg:flex-row">
+      <div className="w-full lg:w-1/2 pt-[20%]">
         <Image src={img} className="rounded-[25px]" />
       </div>
       <div className="w-[2px] h-[45%] mt-60 mr-[-18px] bg-custom-gradient">
 
       </div>
-      <div className="w-1/2 flex flex-col gap-12 pr-[60px] pt-[10%]">
+      <div className="w-full lg:w-1/2 flex flex-col gap-12 pr-[60px] pt-[10%]">
       <p className="text-[40px] font-[650] text-[#0E3768]">Why Aurae.ai ?</p>
         <div className="flex gap-1">
           <div className="w-[33px] mt-2 mr-3 h-[33px] rounded-full bg-[#FF8048] p-2">

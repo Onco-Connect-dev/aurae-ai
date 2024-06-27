@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function HowWeWork() {
   return (
-    <div className=" w-screen overflow-x-hidden mt-20 pl-5 pr-20 pb-20">
+    <div className=" w-full overflow-x-hidden mt-20 pl-5 pr-20 pb-20">
       <p className="text-[48px] font-[600] text-center mb-40">How We Work?</p>
       <div className="flex justify-between">
         <div>
@@ -199,6 +199,7 @@ function HowWeWork() {
         </div>
       </div>
     </div>
+    
   );
 }
 

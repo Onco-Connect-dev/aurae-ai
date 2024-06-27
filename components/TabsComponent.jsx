@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import img1 from "../public/tab1.png";
 import img2 from "../public/tab2.png";
 import img4 from "../public/tab4.png";
-
 
 const TabsComponent = () => {
   const [selectedTab, setSelectedTab] = useState("Insurance");
@@ -37,6 +37,7 @@ const TabsComponent = () => {
         "Promote workplace wellness with Aurae.AI’s monitoring solutions. Track employee health metrics, boost productivity, and foster a healthier, more engaged workforce with real-time health insights and proactive wellness programs.",
       image: img4,
       bgColor: "bg-[#21201F]",
+      textColor: "text-white",
     },
   ];
 
@@ -46,13 +47,13 @@ const TabsComponent = () => {
     <div className={`min-h-screen mt-40 ${currentTab.bgColor} p-0`}>
       <div className="container mx-auto">
         <div className="flex justify-between bg-white mb-6">
-        {tabs.map((tab) => (
+          {tabs.map((tab) => (
             <button
               key={tab.title}
               className={`p-4 w-1/4 text-[24px] font-[400] ${
                 selectedTab === tab.title
-                  ? `font-[500] ${tab.bgColor} ${tab.title === 'Employers' ? 'text-white' : 'text-black'}`
-                  : " text-black"
+                  ? `font-[500] ${tab.bgColor} ${tab.textColor || 'text-black'}`
+                  : "text-black"
               }`}
               onClick={() => setSelectedTab(tab.title)}
             >
@@ -61,14 +62,12 @@ const TabsComponent = () => {
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 pt-20 pl-10 gap-4">
-        <div className="p-4">
-            <h1 className={`text-[36px] font-[600] mb-4 ${selectedTab === 'Employers' ? 'text-white' : 'text-black'}`}>
+          <div className="p-4">
+            <h1 className={`text-[36px] font-[600] mb-4 ${currentTab.textColor || 'text-black'}`}>
               {currentTab.title}
             </h1>
-            <div className="bg-[#FF8048] w-1/5 h-[4px] mt-[-15px] mb-8">
-
-            </div>
-            <p className={`text-[17px] font-[450] leading-[40px] mb-6 w-[80%] ${selectedTab === 'Employers' ? 'text-white' : 'text-black'}`}>
+            <div className="bg-[#FF8048] w-1/5 h-[4px] mt-[-15px] mb-8"></div>
+            <p className={`text-[17px] font-[450] leading-[40px] mb-6 w-[80%] ${currentTab.textColor || 'text-black'}`}>
               {currentTab.description}
             </p>
           </div>
@@ -76,7 +75,7 @@ const TabsComponent = () => {
             <Image
               src={currentTab.image}
               alt={currentTab.title}
-              className=" shadow-md"
+              className="shadow-md"
               width={500}
               height={350}
             />
@@ -85,6 +84,20 @@ const TabsComponent = () => {
       </div>
     </div>
   );
+};
+
+TabsComponent.propTypes = {
+  selectedTab: PropTypes.string,
+  setSelectedTab: PropTypes.func,
+  tabs: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      image: PropTypes.object.isRequired,
+      bgColor: PropTypes.string.isRequired,
+      textColor: PropTypes.string,
+    })
+  ),
 };
 
 export default TabsComponent;
