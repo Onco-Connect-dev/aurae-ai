@@ -4,8 +4,8 @@ import React from "react";
 
 const TransformsHealthMonitoring = () => {
   return (
-    <div className="pt-10 pb-10  w-screen overflow-x-hidden">
-      <p className="text-center text-[48px] font-[600]">
+    <div className="pt-20  w-screen overflow-x-hidden">
+      <p className="text-center text-[48px] mt-10 mb-10 font-[600]">
         <span className="text-[#DC7D57]">How</span>{" "}
         <span className=" text-gradient">Aurae.AI</span>{" "}
         <span className="text-[#DC7D57]">
@@ -14,7 +14,7 @@ const TransformsHealthMonitoring = () => {
           <span className="text-[#B9B9B9]"> ?</span> 
     
       </p>
-      <p className="text-center text-[#0E3768] text-[24px] font-[500]">
+      <p className="text-center text-[#0E3768] text-[24px] mb-10 font-[500]">
         Quick, seamless integration for accurate health insights.
       </p>
       <style jsx>{`

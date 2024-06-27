@@ -12,16 +12,17 @@ import WhyAuraeAI from "@/components/WhyAuraeAI";
 export default function Home() {
   return (
     <main className="flex w-screen overflow-x-hidden bg-white flex-col items-center justify-between">
-     <Header/>
-     <Banner/>
-     <QuickHealthCheck/>
-     <HowWeWork/>
-     <LineGraph/>
-     <TransformsHealthMonitoring/>
-     <WhoWeWorkWith/>
-     <WhyAuraeAI/>
-     <WhatsNew/>
-     <Footer/>
+      <Header />
+      <Banner />
+      <QuickHealthCheck />
+      <LineGraph />
+      <HowWeWork />
+
+      <TransformsHealthMonitoring />
+      <WhoWeWorkWith />
+      <WhyAuraeAI />
+      <WhatsNew />
+      <Footer />
     </main>
   );
 }

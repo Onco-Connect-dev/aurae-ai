@@ -113,7 +113,7 @@ function LineGraph() {
           </p>
         </div>
       </div>
-      <div className="w-1/2 p-10">
+      <div className="w-1/2 p-10 pt-20">
         <svg
           width="540"
           height="345"
