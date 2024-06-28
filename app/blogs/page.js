@@ -2,7 +2,7 @@
 
 import React, {useEffect} from 'react'
 
-const page = () => {
+const Page = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       }, []);
@@ -13,4 +13,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

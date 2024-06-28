@@ -2,7 +2,7 @@
 
 import React, {useEffect} from 'react'
 
-function page() {
+function Page() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -79,4 +79,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
