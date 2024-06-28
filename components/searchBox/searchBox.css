@@ -1,0 +1,25 @@
+.search-box {
+    position: relative;
+    background-color: rgb(226, 223, 223);
+    border-radius: 30px;
+}
+
+.search-box input {
+    border: none !important;
+    outline: none !important;
+    padding: 12px 20px !important;
+    padding-right: 48px !important;
+    width: 100% !important;
+    background-color: transparent !important;
+}
+
+.search-box .ico {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 18px;
+    width: 18px;
+    margin: 0 15px;
+    cursor: pointer;
+}
