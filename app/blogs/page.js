@@ -57,7 +57,7 @@ const Page = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">
+      <h1 className="text-4xl font-semibold text-center mb-8">
         Aurae.ai Digital Health Library
       </h1>
       <div className="mb-8">
@@ -66,7 +66,7 @@ const Page = () => {
           placeholder="Search articles"
           value={searchQuery}
           onChange={handleSearchChange}
-          className="w-full p-2 border border-gray-300 rounded-md"
+          className="w-1/4 p-2 border border-gray-400 focus:outline-none rounded-md"
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
