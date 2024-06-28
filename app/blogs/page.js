@@ -84,7 +84,7 @@ const Page = () => {
                 />
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-sm text-gray-600">
+                    <span className="text-sm text-gray-800">
                       {formatDate(article.publishedAt)}
                     </span>
                   </div>
