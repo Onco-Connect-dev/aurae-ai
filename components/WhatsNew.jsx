@@ -5,12 +5,12 @@ import rightArrow from "../public/arrow-white.png";
 
 function WhatsNew() {
   return (
-    <div className="pb-20 pt-20 w-full overflow-x-hidden pr-10">
+    <div className="pb-20 pt-20 w-full overflow-x-hidden pr-20 pl-20" >
       <p className="text-[32px] md:text-[48px] mb-10 text-center w-full font-semibold">
         What’s new at Aurae.ai?
       </p>
       <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start">
-        <div className="w-full lg:w-1/2 mb-10 lg:mb-0 px-4 lg:px-10">
+        <div className="w-full lg:w-1/2 mb-10 lg:mb-0 px-4 ">
           <p className="text-[28px] md:text-[38px] pt-5 font-medium leading-[40px] md:leading-[60px]">
             Discover how health impacts employees at work.
           </p>
@@ -23,8 +23,8 @@ function WhatsNew() {
             Read all Articles <Image className="p-2" src={rightArrow} alt="Right Arrow" />
           </button>
         </div>
-        <div className="w-full lg:w-1/2 px-4 lg:px-0">
-          <Image src={img} alt="What's New" />
+        <div className="w-full lg:w-1/2 flex items-center justify-center bg-cover">
+          <Image width={500} src={img} alt="What's New" />
         </div>
       </div>
     </div>

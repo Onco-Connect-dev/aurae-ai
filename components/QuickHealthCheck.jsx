@@ -13,12 +13,12 @@ export default function QuickHealthCheck() {
           Speak to us
         </button>
       </div>
-      <div className="w-full flex flex-col sm:flex-row">
+      <div className="w-full sm:pl-10 flex flex-col sm:flex-row">
         <div className="w-full sm:w-7/12 pl-4 sm:pl-14 pt-10 sm:pt-20">
           <p className="text-[30px] sm:text-[40px] font-[600] mb-4">
             Quick health check in 30 seconds
           </p>
-          <p className="text-[18px] sm:text-[20px] font-[425] w-full sm:w-[90%]">
+          <p className="text-[18px] sm:text-[20px] font-[425] w-full sm:w-[85%]">
             Experience the convenience of Aurae.AI’s contactless health
             assessment. Using advanced imaging, our tool analyzes light
             reflected from blood flow beneath your skin, delivering a
@@ -31,16 +31,16 @@ export default function QuickHealthCheck() {
           <div
             style={{
               backgroundImage: `url(${ellipse.src})`,
-              backgroundSize: "70%",
-              backgroundPosition: "left",
+              backgroundSize: "60%",
+              backgroundPosition: "bottom left",
             }}
             className="pl-4 sm:pl-10 flex bg-cover mt-10 bg-no-repeat"
           >
             <div className="flex flex-col pt-8">
-              <div>
+              <div className="pl-1">
                 <svg
-                  width="102"
-                  height="98"
+                  width="95"
+                  height="90"
                   viewBox="0 0 102 98"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +190,7 @@ export default function QuickHealthCheck() {
                   </defs>
                 </svg>
               </div>
-              <div>
+              <div className="pl-1">
                 <svg
                   width="102"
                   height="98"
@@ -265,7 +265,7 @@ export default function QuickHealthCheck() {
                 </svg>
               </div>
             </div>
-            <Image className="p-0 pl-2 m-0" height={370} src={img} />
+            <Image className="p-0 pl-2 m-0" height={360} src={img} />
           </div>
         </div>
       </div>

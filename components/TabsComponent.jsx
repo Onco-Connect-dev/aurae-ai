@@ -44,41 +44,54 @@ const TabsComponent = () => {
   const currentTab = tabs.find((tab) => tab.title === selectedTab);
 
   return (
-    <div className={`min-h-screen mt-40 ${currentTab.bgColor} p-0`}>
-      <div className="container mx-auto">
-        <div className="flex justify-between bg-white mb-6">
-          {tabs.map((tab) => (
-            <button
-              key={tab.title}
-              className={`p-4 w-1/4 text-[24px] font-[400] ${
-                selectedTab === tab.title
-                  ? `font-[500] ${tab.bgColor} ${tab.textColor || 'text-black'}`
-                  : "text-black"
-              }`}
-              onClick={() => setSelectedTab(tab.title)}
-            >
-              {tab.title}
-            </button>
-          ))}
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 pt-20 pl-10 gap-4">
-          <div className="p-4">
-            <h1 className={`text-[36px] font-[600] mb-4 ${currentTab.textColor || 'text-black'}`}>
-              {currentTab.title}
-            </h1>
-            <div className="bg-[#FF8048] w-1/5 h-[4px] mt-[-15px] mb-8"></div>
-            <p className={`text-[17px] font-[450] leading-[40px] mb-6 w-[80%] ${currentTab.textColor || 'text-black'}`}>
-              {currentTab.description}
-            </p>
-          </div>
-          <div className="p-4">
-            <Image
-              src={currentTab.image}
-              alt={currentTab.title}
-              className="shadow-md"
-              width={500}
-              height={350}
-            />
+    <div >
+      <p className="text-[32px] md:text-[48px] mt-20 text-center w-full font-semibold">
+        Who we work with
+      </p>
+      <div className="flex w-full justify-center items-center">
+        <div
+          className={`min-h-screen" w-[85%] mt-20 ${currentTab.bgColor} p-0`}
+        >
+          <div className="">
+            <div className="flex justify-between items-center bg-white mb-6">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.title}
+                  className={`p-4 w-1/4 text-[24px] font-[400] ${
+                    selectedTab === tab.title
+                      ? `font-[500] ${tab.bgColor} ${tab.textColor || "text-black"}`
+                      : "text-black"
+                  }`}
+                  onClick={() => setSelectedTab(tab.title)}
+                >
+                  {tab.title}
+                </button>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 pt-20 pl-10 gap-4">
+              <div className="p-4">
+                <h1
+                  className={`text-[36px] font-[600] mb-4 ${currentTab.textColor || "text-black"}`}
+                >
+                  {currentTab.title}
+                </h1>
+                <div className="bg-[#FF8048] w-1/6 h-[4px] mt-[-15px] mb-8"></div>
+                <p
+                  className={`text-[18px] font-[400] leading-[40px] mb-6 w-[80%] ${currentTab.textColor || "text-black"}`}
+                >
+                  {currentTab.description}
+                </p>
+              </div>
+              <div className="p-4">
+                <Image
+                  src={currentTab.image}
+                  alt={currentTab.title}
+                  className="shadow-md"
+                  width={500}
+                  height={350}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

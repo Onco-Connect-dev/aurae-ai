@@ -8,7 +8,7 @@ import Image from "next/image";
 const TransformsHealthMonitoring = () => {
   return (
     <div className="pt-20  w-full overflow-x-hidden">
-      <p className="text-center text-[48px] mt-10 mb-10 font-[600]">
+      <p className="text-center text-[48px] mt-10 mb-4 font-[600]">
         <span className="text-[#DC7D57]">How</span>{" "}
         <span className=" text-gradient">Aurae.AI</span>{" "}
         <span className="text-[#DC7D57]">Transforms Health</span>
@@ -31,11 +31,11 @@ const TransformsHealthMonitoring = () => {
           -webkit-text-fill-color: transparent;
         }
       `}</style>
-      <div className="flex justify-center items-center pr-5">
+      <div className="flex pl-20 justify-center mb-8 items-center pr-20">
         <Image src={img1} />
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex pl-20 justify-center items-center pr-20">
         <Image src={img2} />
       </div>
     </div>
