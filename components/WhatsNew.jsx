@@ -24,7 +24,7 @@ function WhatsNew() {
           </button>
         </div>
         <div className="w-full lg:w-1/2 flex items-center justify-center bg-cover">
-          <Image width={500} src={img} alt="What's New" />
+          <Image width={450} src={img} alt="What's New" />
         </div>
       </div>
     </div>

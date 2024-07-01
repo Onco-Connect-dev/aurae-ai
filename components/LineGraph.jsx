@@ -10,7 +10,7 @@ function LineGraph() {
           <svg
             width="62"
             height="62"
-            viewBox="0 0 65 65"
+            viewBox="0 0 62 62"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="mb-3"
@@ -56,9 +56,9 @@ function LineGraph() {
         </div>
         <div className="pl-5 pt-3">
           <svg
-            width="55"
-            height="55"
-            viewBox="0 0 55 55"
+            width="62"
+            height="62"
+            viewBox="0 0 62 62"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="mb-3"
@@ -78,9 +78,9 @@ function LineGraph() {
         </div>
         <div className="pl-5 pt-3">
           <svg
-            width="74"
-            height="74"
-            viewBox="0 0 74 74"
+            width="62"
+            height="62"
+            viewBox="0 0 62 62"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
