@@ -23,7 +23,7 @@ function WhatsNew() {
             Read all Articles <Image className="p-2" src={rightArrow} alt="Right Arrow" />
           </button>
         </div>
-        <div className="w-full lg:w-1/2 flex items-center justify-center bg-cover">
+        <div className="w-full lg:w-1/2 flex items-center mt-8 justify-center bg-cover">
           <Image width={450} src={img} alt="What's New" />
         </div>
       </div>

@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import img from "../public/line-graph.png";
 
 function LineGraph() {
   return (
